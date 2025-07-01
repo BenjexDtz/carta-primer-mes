@@ -18,15 +18,16 @@
       color: #333;
       text-align: center;
       margin: 0;
-      padding: 0;
+      padding: 20px;
     }
 
     #carta-completa {
-      background: #fff; /* Fondo sólido para PDF */
-      width: 800px;     /* Ancho fijo para PDF */
-      min-height: 1100px; /* Altura tipo carta A4 */
-      margin: 50px auto;
-      padding: 50px;
+      background: #fff;
+      width: 100%;
+      max-width: 800px;
+      min-height: auto;
+      margin: 30px auto;
+      padding: 30px 20px;
       border-radius: 20px;
       box-sizing: border-box;
       box-shadow: 0 10px 20px rgba(0,0,0,0.1);
@@ -34,12 +35,13 @@
 
     h1 {
       color: #e91e63;
-      font-size: 2.8rem;
-      margin-bottom: 30px;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      word-wrap: break-word;
     }
 
     .heart {
-      font-size: 4rem;
+      font-size: 3rem;
       color: red;
       animation: heartbeat 1s infinite;
     }
@@ -51,18 +53,20 @@
     }
 
     .letter {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       text-align: left;
       line-height: 1.8;
+      word-wrap: break-word;
     }
 
     .footer {
-      margin-top: 40px;
-      font-size: 1rem;
+      margin-top: 30px;
+      font-size: 0.9rem;
       color: #555;
     }
 
     img {
+      width: 100%;
       max-width: 200px;
       border-radius: 50%;
       margin: 20px 0;
@@ -74,7 +78,7 @@
       background-color: #e91e63;
       border: none;
       padding: 10px 25px;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: white;
       border-radius: 30px;
       transition: background-color 0.3s;
@@ -83,6 +87,18 @@
 
     .btn-download:hover {
       background-color: #c2185b;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .letter {
+        font-size: 1rem;
+      }
+      .heart {
+        font-size: 2.5rem;
+      }
     }
   </style>
 </head>
@@ -105,12 +121,12 @@
 
     <div class="letter">
       <p>
-        <span style="font-size: 2rem;">💖</span> <strong>Amor mío,</strong><br><br>
+        <span style="font-size: 1.5rem;">💖</span> <strong>Amor mío,</strong><br><br>
         Hoy celebramos nuestro <strong>primer mes juntos</strong> como pareja, aunque nuestras almas se reconocieron mucho antes. Ya hace más de un año que la vida nos cruzó y desde entonces todo tomó forma de un sueño hecho realidad: <em>estar contigo, de verdad</em>, de la forma más hermosa que pude imaginar.<br><br>
         Gracias, mi vida, por existir y por elegirme. Gracias por demostrarme cada día que <strong>eres exactamente lo que siempre le pedí a Dios</strong>: tan hermosa, tan fuerte, tan dulce y tan única. Eres mi regalo más valioso, mi motivo para agradecer cada noche y cada amanecer. ✨<br><br>
         Prometo que esto apenas es el principio. <strong>Deseo que esta historia nunca tenga final</strong>, que podamos cumplir sueños, superar miedos, construir recuerdos y reírnos de todo lo que venga. Quiero aventuras, viajes, películas hasta tarde, abrazos interminables y mil días más como hoy... y mil más después de esos.<br><br>
         Hoy celebramos apenas <em>un pequeño fragmento</em> de todo lo que construiremos. Un primer mes que representa <strong>1 / ∞</strong> de lo que somos y de lo que seremos. Porque contigo aprendí que el amor verdadero no tiene final.<br><br>
-        <span style="font-size: 1.5rem;">💕 Gracias por ser mi lugar seguro. Te amo con cada parte de mí, ahora y siempre.</span><br><br>
+        <span style="font-size: 1.2rem;">💕 Gracias por ser mi lugar seguro. Te amo con cada parte de mí, ahora y siempre.</span><br><br>
         Con todo mi corazón,<br>
         <strong>Tu Benjamín 💌</strong>
       </p>
