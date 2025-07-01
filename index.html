@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feliz Primer Mes, Mi Amor</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+      font-family: 'Dancing Script', cursive;
+      color: #333;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    #carta-completa {
+      background: #fff; /* Fondo sólido para PDF */
+      width: 800px;     /* Ancho fijo para PDF */
+      min-height: 1100px; /* Altura tipo carta A4 */
+      margin: 50px auto;
+      padding: 50px;
+      border-radius: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #e91e63;
+      font-size: 2.8rem;
+      margin-bottom: 30px;
+    }
+
+    .heart {
+      font-size: 4rem;
+      color: red;
+      animation: heartbeat 1s infinite;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.2); }
+      50% { transform: scale(1); }
+    }
+
+    .letter {
+      font-size: 1.5rem;
+      text-align: left;
+      line-height: 1.8;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    img {
+      max-width: 200px;
+      border-radius: 50%;
+      margin: 20px 0;
+    }
+
+    .btn-download {
+      display: inline-block;
+      margin: 20px auto;
+      background-color: #e91e63;
+      border: none;
+      padding: 10px 25px;
+      font-size: 1.2rem;
+      color: white;
+      border-radius: 30px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+    }
+
+    .btn-download:hover {
+      background-color: #c2185b;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Botón para iniciar música -->
+  <button class="btn-download" onclick="document.getElementById('musica').play()">Haz click para escuchar nuestra canción... 💞</button>
+
+  <!-- Etiqueta de audio -->
+  <audio id="musica" loop>
+    <source src="music/milvidas.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <!-- 💌 CONTENIDO DESCARGABLE -->
+  <div id="carta-completa">
+    <h1>💖 Feliz Primer Mes, Mi Amor 💖</h1>
+
+    <img src="img/foto.jpg" alt="Foto de nosotros" />
+
+    <div class="letter">
+      <p>
+        <span style="font-size: 2rem;">💖</span> <strong>Amor mío,</strong><br><br>
+        Hoy celebramos nuestro <strong>primer mes juntos</strong> como pareja, aunque nuestras almas se reconocieron mucho antes. Ya hace más de un año que la vida nos cruzó y desde entonces todo tomó forma de un sueño hecho realidad: <em>estar contigo, de verdad</em>, de la forma más hermosa que pude imaginar.<br><br>
+        Gracias, mi vida, por existir y por elegirme. Gracias por demostrarme cada día que <strong>eres exactamente lo que siempre le pedí a Dios</strong>: tan hermosa, tan fuerte, tan dulce y tan única. Eres mi regalo más valioso, mi motivo para agradecer cada noche y cada amanecer. ✨<br><br>
+        Prometo que esto apenas es el principio. <strong>Deseo que esta historia nunca tenga final</strong>, que podamos cumplir sueños, superar miedos, construir recuerdos y reírnos de todo lo que venga. Quiero aventuras, viajes, películas hasta tarde, abrazos interminables y mil días más como hoy... y mil más después de esos.<br><br>
+        Hoy celebramos apenas <em>un pequeño fragmento</em> de todo lo que construiremos. Un primer mes que representa <strong>1 / ∞</strong> de lo que somos y de lo que seremos. Porque contigo aprendí que el amor verdadero no tiene final.<br><br>
+        <span style="font-size: 1.5rem;">💕 Gracias por ser mi lugar seguro. Te amo con cada parte de mí, ahora y siempre.</span><br><br>
+        Con todo mi corazón,<br>
+        <strong>Tu Benjamín 💌</strong>
+      </p>
+    </div>
+
+    <div class="heart">❤️</div>
+
+    <p class="footer">Siempre tuyo — 30 / 06 / 2025</p>
+  </div>
+
+</body>
+</html>
